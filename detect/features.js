@@ -180,6 +180,29 @@
         return ("webkitSpeechRecognition" in g);
     });
 
+    // Check for filesystem
+    addtest("native-filesystem", function(g){
+        return ("requestFileSystem" in g
+                || "webkitRequestFileSystem" in g
+                || "mozRequestFileSystem" in g);
+    });
+
+    // Check for blob save
+    addtest("native-blobsave", function(g){
+        return has("native-navigator")
+            && ("msSaveOrOpenBlob" in g.navigator);
+    });
+
+    // Check for external host
+    addtest("native-externalhost", function(g){
+        return ("externalHost" in g);
+    });
+
+    // Check for anchor download
+    addtest("native-anchordownload", function(g, d){
+        return has("dom-createelementns")
+            && ("download" in d.createElementNS("http://www.w3.org/1999/xhtml", "a"));
+    });
 
 })(has, has.add, has.cssprop);
 
