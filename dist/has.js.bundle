@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://vswebessentials.com/schemas/v1/bundle.xsd">
+  <settings>
+    <!--Determines if the sprite image should be automatically optimized after creation/update.-->
+    <minify>true</minify>
+    <!--Determin whether to generate/re-generate this sprite on building the solution.-->
+    <runOnBuild>true</runOnBuild>
+    <!--Use absolute path in the generated CSS files. By default, the URLs are relative to generated bundled CSS file.-->
+    <adjustRelativePaths>false</adjustRelativePaths>
+    <!--Specifies a custom subfolder to save files to. By default, compiled output will be placed in the same folder and nested under the original file.-->
+    <outputDirectory />
+  </settings>
+  <!--The order of the <file> elements determines the order of the images in the bundle.-->
+  <files>
+    <file>/has.js</file>
+    <file>/detect/__base.js</file>
+    <file>/detect/array.js</file>
+    <file>/detect/audio.js</file>
+    <file>/detect/bugs.js</file>
+    <file>/detect/css.js</file>
+    <file>/detect/dates.js</file>
+    <file>/detect/dom.js</file>
+    <file>/detect/events.js</file>
+    <file>/detect/features.js</file>
+    <file>/detect/form.js</file>
+    <file>/detect/function.js</file>
+    <file>/detect/graphics.js</file>
+    <file>/detect/json.js</file>
+    <file>/detect/object.js</file>
+    <file>/detect/script.js</file>
+    <file>/detect/strings.js</file>
+    <file>/detect/video.js</file>
+  </files>
+</bundle>
