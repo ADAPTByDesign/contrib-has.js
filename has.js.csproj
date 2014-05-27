@@ -73,10 +73,24 @@
     <Content Include="detect\strings.js" />
     <Content Include="detect\video.js" />
     <Content Include="detect\__base.js" />
+    <Content Include="dist\has.js">
+      <DependentUpon>has.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="dist\has.min.js">
+      <DependentUpon>has.js</DependentUpon>
+    </Content>
     <Content Include="has.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="dist\" />
+    <Content Include="nuget\Has.js.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\has.js.bundle" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\has.min.js.map">
+      <DependentUpon>has.min.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>

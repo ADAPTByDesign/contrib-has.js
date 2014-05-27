@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Has.js</id>
+    <version>1.0.1</version>
+    <title>Has.js</title>
+    <authors>phiggins42,ADAPTByDesign</authors>
+    <projectUrl>https://github.com/phiggins42/has.js</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Pure feature detection library, a la carte style.
+      [NuGet packaging by ADAPTByDesign]
+    </description>
+    <summary>Pure feature detection library, a la carte style.</summary>
+    <releaseNotes />
+    <copyright />
+    <tags>FeatureDetection</tags>
+  </metadata>
+  <files>
+    <file src="..\dist\has.js" target="content\Scripts\has.js" />
+    <file src="..\dist\has.min.js" target="content\Scripts\has.min.js" />
+  </files>
+</package>
